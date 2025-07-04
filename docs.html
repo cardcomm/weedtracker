@@ -168,25 +168,150 @@ Paste this at the top of any <body> block
 		  
 	<!-- END Searching and Filtering -->
 
+
+	<!-- BEGIN Viewing Your Usage History -->
         <h3 id="logging-usage">Viewing Your Usage History</h3>
-        <p>[Placeholder content]</p>
-        <hr>
+			<p>To view your usage history, select <strong>View History</strong> from the main menu.</p>
+			
+			<p>
+			  You can apply all the usual filters — by strain, date range, transaction type, or text match — to narrow down the list of past transactions.
+			  You can also sort the results by date, ascending or descending.
+			</p>
+			
+			<p>At the bottom of the list, you'll see a summary of totals based on the <strong>currently filtered record set</strong>. These include:</p>
+			
+			<ul>
+			  <li><strong>New</strong>: total quantity added by new items</li>
+			  <li><strong>Added</strong>: stock increases to existing items</li>
+			  <li><strong>Removed</strong>: consumption or usage</li>
+			  <li><strong>Deleted</strong>: items removed from inventory</li>
+			  <li><strong>Net Change</strong>: the overall difference in inventory over the selected period</li>
+			</ul>
+			
+			<p>For example, you might see that you purchased a total of 30 grams and used 24 grams over a month, resulting in a +6g net change.</p>
+			<p class="caption headline">View History Screen</p>
+			<div style="text-align: center;">
+			  <a href="images/view_history.png" target="_blank">
+				<img src="images/view_history.png"
+					 alt="View History screen with filters and summary totals"
+					 class="doc-image">
+			  </a>
+			</div>
+			<p class="caption">The View History screen shows your transaction history with filters, sorting, and a summary of totals at the bottom.</p>
+			
+        	<hr>
+    <!-- END Viewing Your Usage History -->
+        
+        
+	<!-- BEGIN Customizing Tier Levels and Types -->
+    	<h3 id="customizing">Customizing Tier Levels and Item Types</h3>
+           
+		<p>
+		  Access this feature from <strong>Menu → Settings → Edit Types</strong> or <strong>Edit Tiers</strong>.
+		</p>
+		
+		<p>
+		  You can personalize your inventory categories by adding, removing, or reordering <strong>tiers</strong> and <strong>types</strong> to suit your needs.
+		</p>
+		
+		<ul>
+		  <li><strong>Add a new entry:</strong> Type it in the text box and tap <em>Add</em>.</li>
+		  <li><strong>Remove an entry:</strong> Swipe left, or tap <em>Edit</em> to delete or reorder.</li>
+		  <li><strong>Reorder:</strong> Press and drag to change the order — this is reflected in pickers throughout the app.</li>
+		</ul>
+		
+		<div class="caption headline">Reordering and Editing Tiers</div>
+		<a href="images/edit_tiers_drag_to_reposition.png" target="_blank">
+		  <img src="images/edit_tiers_drag_to_reposition.png"
+			   alt="Drag to reorder tiers"
+			   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 0 auto;">
+		</a>
+		<a href="images/edit_tiers_edit_mode.png" target="_blank">
+		  <img src="images/edit_tiers_edit_mode.png"
+			   alt="Edit mode with delete and reorder handles"
+			   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 1rem auto;">
+		</a>
+		
+		<h3>What Happens to Old Entries?</h3>
+		
+		<p>
+		  If you've already assigned a type or tier to an item and later remove or rename it here, don’t worry — the app keeps track.
+		</p>
+		
+		<ul>
+		  <li>It will <strong>automatically include any legacy values</strong> still in use by inventory items, even if they’re no longer in your custom list.</li>
+		  <li>These older values will appear in pickers with an <strong>asterisk ( * )</strong> to indicate they're still in use but not part of the current list.</li>
+		</ul>
+		
+		<p>This ensures all your existing records remain visible and usable without any data loss.</p>
+		<hr>
+	 
+<!-- END Customizing Tier Levels and Types -->
 
-        <h3 id="customizing">Customizing Tier Levels and Types</h3>
-        <p>[Placeholder content]</p>
-        <hr>
 
-        <h3 id="export-import">Exporting and Importing Data</h3>
-        <p>[Placeholder content]</p>
-        <hr>
+<!-- BEGIN Exporting and Importing Data -->
+	<h3 id="export-import">Exporting and Importing Data</h3>
+	
 
-        <h3 id="icloud-sync">iCloud Sync and Multi-Device Use</h3>
-        <p>[Placeholder content]</p>
-        <hr>
+	<p>
+	  Access import and export options through the <strong>Menu → Import/Export</strong> section.
+	</p>
+	
+	<p>
+	  WeedTracker lets you back up and transfer both your <strong>inventory</strong> and <strong>history</strong> data. You can:
+	</p>
+	
+	<ul>
+	  <li><strong>Export data</strong> in either <em>CSV</em> or <em>tabular text</em> format</li>
+	  <li><strong>Export inventory images</strong> by enabling the image switch on the export screen</li>
+	  <li><strong>Import data</strong> from compatible CSV or tabular text files</li>
+	</ul>
+	
+	<h3>Where Exported Files Go</h3>
+	
+	<p>
+	  When exporting, the app creates a <strong>date- and time-stamped folder</strong> inside the <code>WeedTracker</code> folder in your device’s <code>Documents</code> directory.
+	</p>
+	
+	<p>This folder contains:</p>
+	<ul>
+	  <li><strong>Your exported text or CSV file</strong></li>
+	  <li><strong>Inventory images</strong>, if the option was enabled</li>
+	</ul>
+	
+	<h3>Filtering Before Export</h3>
+	
+	<p>
+	  You can apply filters (by date, strain, type, etc.) and sort records before exporting. This is useful if, for example, you only want to export history from a specific date range.
+	</p>
+	
+	<h3>Importing Files</h3>
+	
+	<ul>
+	  <li><strong>Text files</strong> can be imported from anywhere on your device.</li>
+	  <li><strong>Image files</strong> must be located inside the app’s <code>WeedTracker</code> folder, due to Apple’s file access limitations.</li>
+	</ul>
+	
+	<p>This allows for complete backup and restore of your inventory and history data.</p>
+	<p>When importing, you’ll be prompted to select a file using the standard iOS file picker.</p>
+	
+	<div class="caption headline">Export Inventory Options</div>
+	<a href="images/export_inventory_snippet.png" target="_blank">
+	  <img src="images/export_inventory_snippet.png"
+		   alt="Export inventory screen showing export format and image options"
+		   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 0 auto;">
+	</a>
+	<hr>
+<!-- END Exporting and Importing Data -->	
+	
 
-        <h3 id="faq">FAQ and Troubleshooting</h3>
-        <p>[Placeholder content]</p>
-        <hr>
+	<h3 id="icloud-sync">iCloud Sync and Multi-Device Use</h3>
+	<p>[Placeholder content]</p>
+	<hr>
+
+	<h3 id="faq">FAQ and Troubleshooting</h3>
+	<p>[Placeholder content]</p>
+	<hr>
     </main>
 <!--
 == WeedTracker Reusable Footer ==
