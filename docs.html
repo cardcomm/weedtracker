@@ -28,9 +28,9 @@ Paste this at the top of any <body> block
         <ul>
             <li><a href="#getting-started">Getting Started</a></li>          
             <li><a href="#adding-strains">Adding and Managing Inventory</a></li>
-            <li><a href="#logging-usage">Logging Usage and Adjustments</a></li>
+            <li><a href="#search-filter">Searching and Sorting</a></li>
+            <li><a href="#logging-usage">Viewing Your Usage History</a></li>
             <li><a href="#customizing">Customizing Tier Levels and Types</a></li>
-            <li><a href="#search-filter">Searching and Filtering</a></li>
             <li><a href="#export-import">Exporting and Importing Data</a></li>
             <li><a href="#icloud-sync">iCloud Sync and Multi-Device Use</a></li>
             <li><a href="#faq">FAQ and Troubleshooting</a></li>
@@ -38,6 +38,7 @@ Paste this at the top of any <body> block
 
         <hr>
 
+	<!-- BEGIN GETTING STARTED -->
 		<h3 id="getting-started">Getting Started</h3>
 
 			<p>Welcome to WeedTracker! This guide will walk you through the basics of setting up your inventory. As you add, adjust, or remove items, the app automatically builds a complete history of your usage — no extra steps required.</p>
@@ -63,28 +64,129 @@ Paste this at the top of any <body> block
 			<h4>6. iCloud Sync & Backups</h4>
 			<p>Your data is stored privately on your device and can sync across all your Apple devices using iCloud (if enabled). You can also export your data as text or CSV files and import it later, ensuring you always have access to your records.</p>
 			
-			<p>If you need help with importing/exporting data or troubleshooting, see the other sections below or visit the <a href="support.html">support page</a>.</p>	
-
+			<h4>See the screen shots below for an overview of the main inventory functionality.</h4>
+			
+			<p class="caption headline">Inventory View (iPhone)</p>
+			<a href="images/iPhone_main-view_annotated.png" target="_blank">
+			  <img src="images/iPhone_main-view_annotated.png"
+				   alt="Inventory view on iPhone"
+				   class="doc-image"">
+			</a>
+			<p class="caption">On iPhone, the main inventory screen shows your strains in a single-column list. Tap the <strong>+</strong> button in the top-right to add a new item.</p>
+			
+			<p class="caption headline">Inventory View (iPad)</p>
+			<a href="images/iPad_main-view_annotated.png" target="_blank">
+			  <img src="images/iPad_main_view_annotated.png"
+				   alt="Inventory view on iPad"
+				   class="doc-image"">
+			</a>
+			<p class="caption">On iPad, the main view uses a two-column layout: the list appears on the left, and the selected item’s details appear on the right.</p>				
+			<hr>				
+    <!-- END GETTING STARTED -->
+        
+        
+    <!-- BEGIN ADDING AND MANAGING INVENTORY -->
         <h3 id="adding-strains">Adding and Managing Inventory</h3>
-        <p>[Placeholder content]</p>
 
-        <h3 id="logging-usage">Logging Usage and Adjustments</h3>
+			<p>To add a new item to your inventory, tap the <strong>+</strong> button. A form will appear where you can enter details like the strain name, quantity, cost, product type (such as Flower or Concentrate), and tier (e.g., Premium, Budget). You can also attach an image if you’d like a quick visual reference.</p>
+			
+			<p>To update an existing item, simply select it from the list. From the detail view, you can:</p>
+			<ul>
+			  <li>Tap <strong>Add</strong> to increase the quantity</li>
+			  <li>Tap <strong>Remove</strong> to decrease it (e.g., for usage or disposal)</li>
+			</ul>
+			
+			<p>To delete an item, either:</p>
+			<ul>
+			  <li>Tap the <strong>Edit</strong> button in the list view to reveal delete options, or</li>
+			  <li>Swipe the item to the left and tap <strong>Delete</strong> — this uses standard iOS swipe-to-delete behavior</li>
+			</ul>
+			
+			<p>Each of these actions automatically creates a transaction history entry, so your usage is always tracked in the background.</p>
+			
+			<p>All changes are saved automatically — there’s no need to press a Save button.</p>
+			
+			<p>When adding or removing stock in common increments, you may use the built-in fraction picker to quickly select standard ounce-based amounts like 1/8, 1/4, or 1 oz. WeedTracker will automatically convert these to grams.</p>			
+			<p class="caption headline">Fraction Picker</p>			
+			<div style="text-align: center;">
+			  <a href="images/add_stock_fractions_menu.png" target="_blank">
+				<img src="images/add_stock_fractions_menu.png"
+					 alt="Fraction picker for common ounce amounts"
+					 class="doc-image"">
+			  </a>
+			</div>
+			<p class="caption">Use this menu to quickly add or remove common increments like 1/8, 1/4, or 1 ounce.</p>
+			
+			<p class="caption headline">List Edit Mode</p>
+			<div style="text-align: center;">
+			  <a href="images/List_Edit_mode.png" target="_blank">
+				<img src="images/List_Edit_mode.png"
+					 alt="List view showing Edit mode with delete controls"
+					 class="doc-image"">
+			  </a>
+			</div>			
+			<p class="caption">
+			  Tapping the Edit button reveals delete controls for each item. You can also swipe an item to delete it using standard iOS gestures.
+			</p>
+			<hr>
+	<!-- END ADDING AND MANAGING INVENTORY -->	
+	
+	<!-- BEGIN Searching and Filtering -->	
+	
+	 <h3 id="logging-usage">Searching and Sorting</h3>	
+		
+		<p>WeedTracker includes flexible filtering and sorting tools to help you quickly find what you need. These tools work consistently across the app, though the available filter options vary depending on the view.</p>
+		
+		<p>You can filter your data by a variety of fields — such as name, quantity, type, tier, cost, or rating — depending on the context. For numeric fields like quantity and cost, you can choose a comparison (greater than, less than, equal to) to help narrow results. For tier and type fields, you can select multiple values using the “Add” button.</p>
+		
+		<p>You can also enter freeform text to search by name or notes, and filter by date range (in the View History and Export History views).</p>
+		
+		<p>Once filters are applied, only matching results will be shown. You’ll also see a compact summary of the filters currently in effect. You can temporarily hide or show the filtered list using a toggle, or clear all filters at once to reset the view.</p>
+		
+		<p>Sorting lets you reorder the results by name. You can toggle ascending or descending order with a tap.</p>
+		
+		<p>These tools are available in the following places:</p>
+		<ul>
+		  <li><strong>Inventory view</strong> – filter and sort your current items</li>
+		  <li><strong>View History</strong> – filter and sort past transactions</li>
+		  <li><strong>Export History</strong> – filter and sort which transactions to export</li>
+		  <li><strong>Export Inventory</strong> – always exports your full inventory; filtering and sorting are not applicable</li>
+		</ul>
+		
+		<p class="caption headline">Inventory Filters Panel</p>
+		<img src="images/inventory_filters_panel.png" alt="Inventory filter panel with sort and filter options" style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 0 auto;">
+		<p class="caption">Use the filter panel to search, apply filters, or sort inventory items alphabetically by name.</p>    
+
+		<p class="caption headline">Choose Comparison Operator</p>
+		<img src="images/choose_comparison_operator_snippet.png" alt="Comparison operator picker with greater than, less than, and equal options" class="doc-image"">
+		<p class="caption">When filtering by a numeric value such as cost or quantity, tap to choose a comparison operator: greater than, less than, or equal to.</p>
+		
+		<p class="caption headline">Add Tier Picker</p>
+		<img src="images/add_tier_popup-snippet.png" alt="Tier picker with custom category options" class="doc-image"">
+		<p class="caption">Tap the “Add” button to select a tier or type from your defined options. You can add multiple filters in each category.</p>
+		<hr>
+		  
+	<!-- END Searching and Filtering -->
+
+        <h3 id="logging-usage">Viewing Your Usage History</h3>
         <p>[Placeholder content]</p>
+        <hr>
 
         <h3 id="customizing">Customizing Tier Levels and Types</h3>
         <p>[Placeholder content]</p>
-
-        <h3 id="search-filter">Searching and Filtering</h3>
-        <p>[Placeholder content]</p>
+        <hr>
 
         <h3 id="export-import">Exporting and Importing Data</h3>
         <p>[Placeholder content]</p>
+        <hr>
 
         <h3 id="icloud-sync">iCloud Sync and Multi-Device Use</h3>
         <p>[Placeholder content]</p>
+        <hr>
 
         <h3 id="faq">FAQ and Troubleshooting</h3>
         <p>[Placeholder content]</p>
+        <hr>
     </main>
 <!--
 == WeedTracker Reusable Footer ==
