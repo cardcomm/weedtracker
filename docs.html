@@ -33,6 +33,8 @@ Paste this at the top of any <body> block
             <li><a href="#customizing">Customizing Tier Levels and Types</a></li>
             <li><a href="#export-import">Exporting and Importing Data</a></li>
             <li><a href="#icloud-sync">iCloud Sync and Multi-Device Use</a></li>
+            <li><a href="#clearing-data">Clearing Your Data</a></li>
+            <li><a href="#app-settings">App Settings</a></li>          
             <li><a href="#faq">FAQ and Troubleshooting</a></li>
         </ul>
 
@@ -58,7 +60,7 @@ Paste this at the top of any <body> block
 			<p>The history view gives you a clear, scrollable record of all changes to your inventory, including the date, action taken, quantity adjusted, and any notes entered at the time.</p>
 			
 			<h4>5. Set Low Stock Warnings</h4>
-			<p>You can set a low stock warning threshold from the <strong>App Options</strong> screen, available in the main menu. Once enabled, WeedTracker will alert you when your total inventory level drops below that quantity.</p>
+			<p>You can set a low stock warning threshold from the <strong>App Options</strong> screen, available in the main menu. Once enabled, WeedTracker will alert you when your total inventory level drops below that quantity. (You will receive a pop up warning, and the total grams will be shown in red.)</p>
 			<p>This helps you stay on top of your supply without the need to constantly check levels manually — a simple way to avoid running out unexpectedly.</p>			
 			
 			<h4>6. iCloud Sync & Backups</h4>
@@ -81,6 +83,27 @@ Paste this at the top of any <body> block
 				   class="doc-image"">
 			</a>
 			<p class="caption">On iPad, the main view uses a two-column layout: the list appears on the left, and the selected item’s details appear on the right.</p>				
+			
+			<h4>Sample Data</h4>
+			<p>
+			  Want to explore the app with sample data?<br>
+			  You can load sample inventory and history records in two ways:
+			</p>
+			
+			<ul>
+			  <li>From the <strong>initial startup screen</strong></li>
+			  <li>Or later via <strong>Menu → Create Sample Data</strong></li>
+			</ul>
+			
+			<p>
+			  This is a great way to try out the app’s features before entering your own data.
+			</p>
+			
+			<p>
+			  <em>When you're ready, you can remove sample data — or all data — by visiting the
+			  <a href="#clearing-data"><strong>Clearing Your Data</strong></a> section.</em>
+			</p>
+			
 			<hr>				
     <!-- END GETTING STARTED -->
         
@@ -133,7 +156,7 @@ Paste this at the top of any <body> block
 	
 	<!-- BEGIN Searching and Filtering -->	
 	
-	 <h3 id="logging-usage">Searching and Sorting</h3>	
+	 <h3 id="search-filter">Searching and Sorting</h3>
 		
 		<p>WeedTracker includes flexible filtering and sorting tools to help you quickly find what you need. These tools work consistently across the app, though the available filter options vary depending on the view.</p>
 		
@@ -224,12 +247,12 @@ Paste this at the top of any <body> block
 		<a href="images/edit_tiers_drag_to_reposition.png" target="_blank">
 		  <img src="images/edit_tiers_drag_to_reposition.png"
 			   alt="Drag to reorder tiers"
-			   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 0 auto;">
+			   class="doc-image">
 		</a>
 		<a href="images/edit_tiers_edit_mode.png" target="_blank">
 		  <img src="images/edit_tiers_edit_mode.png"
 			   alt="Edit mode with delete and reorder handles"
-			   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 1rem auto;">
+			   class="doc-image">
 		</a>
 		
 		<h3>What Happens to Old Entries?</h3>
@@ -299,18 +322,117 @@ Paste this at the top of any <body> block
 	<a href="images/export_inventory_snippet.png" target="_blank">
 	  <img src="images/export_inventory_snippet.png"
 		   alt="Export inventory screen showing export format and image options"
-		   style="max-width: 300px; width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px; display: block; margin: 0 auto;">
+		   class="doc-image">
 	</a>
 	<hr>
 <!-- END Exporting and Importing Data -->	
-	
 
+	
+<!-- BEGIN iCloud Sync and Multi-Device Use -->	
 	<h3 id="icloud-sync">iCloud Sync and Multi-Device Use</h3>
-	<p>[Placeholder content]</p>
+	
+	<p>
+	  WeedTracker supports syncing your data securely across multiple iPhones and iPads using <strong>iCloud</strong>. This allows you to:
+	</p>
+	
+	<ul>
+	  <li>Keep your inventory and history in sync across all devices</li>
+	  <li>Make updates on one device and see them reflected on another</li>
+	  <li>Seamlessly switch between devices without losing your data</li>
+	</ul>
+	
+	<h3>How It Works</h3>
+	
+	<p>
+	  WeedTracker uses Apple’s <strong>CloudKit</strong> service to store your data in your private iCloud account. Syncing happens automatically in the background when:
+	</p>
+	
+	<ul>
+	  <li>iCloud is enabled for the app</li>
+	  <li>All devices are signed in to the same Apple ID</li>
+	  <li>The app is installed and iCloud permissions are granted on each device</li>
+	</ul>
+	
+	<h3>How to Enable iCloud Sync on Your Device</h3>
+	
+	<ol>
+	  <li>Open the <strong>Settings</strong> app on your device.</li>
+	  <li>Tap your <strong>Apple ID</strong> at the top (your name).</li>
+	  <li>Tap <strong>iCloud</strong>.</li>
+	  <li>Scroll down and tap <strong>Show All</strong> under “Apps Using iCloud.”</li>
+	  <li>Ensure <strong>WeedTracker</strong> is turned <strong>on</strong> in the list.</li>
+	</ol>
+	
+	<p><em>Tip: Repeat this check on each device where you use WeedTracker.</em></p>
+	
+	<h3>Notes</h3>
+	
+	<ul>
+	  <li>WeedTracker does <strong>not</strong> require iCloud Drive — just basic iCloud support for apps.</li>
+	  <li>Make sure you're connected to the internet for sync to occur.</li>
+	  <li>Changes may take a few moments to sync, depending on network and device activity.</li>
+	</ul>
 	<hr>
+<!-- END iCloud Sync and Multi-Device Use -->
+
+
+<!-- BEGIN Clearing Your Data -->
+	<h3 id="clearing-data">Clearing Your Data</h3>	
+	<p>
+	  You can remove sample data — or any data you've entered — at any time.
+	</p>	
+	<p>
+	  Go to <strong>Menu → Settings → Clear Database</strong> to:
+	</p>	
+	<ul>
+	  <li>Delete your <strong>Inventory records</strong></li>
+	  <li>Delete your <strong>Transaction history</strong></li>
+	  <li>Or both at once</li>
+	</ul>	
+	<p><strong>⚠️ This action is permanent and cannot be undone.</strong></p>
+	<hr>
+<!-- END Clearing Your Data -->
+
+<!-- BEGIN App Settings -->
+	<h3 id="app-settings">App Settings</h3>
+	<p>
+	  You can customize key app behavior from the <strong>Menu → Settings</strong> screen:
+	</p>
+	<ul>
+	  <li>
+		<strong>Show Images</strong> <em>(On by default)</em><br>
+		Toggle this on or off to display inventory images in list views. Turning it off results in a cleaner, faster layout — especially useful on smaller screens or for a more text-focused display.
+	  </li>
+	  <li>
+		<strong>Low Stock Warning</strong> <em>(Off by default)</em><br>
+		Enable this to highlight inventory items that fall below a custom threshold. You can:
+		<ul>
+		  <li>Toggle the warning on or off</li>
+		  <li>Set the low-stock threshold (e.g., 3.5 grams)</li>
+		</ul>
+	  </li>
+	  <li>
+		<strong>Edit Tiers and Types</strong><br>
+		Provides quick access to manage your inventory categories:
+		<ul>
+		  <li>Tap <em>Edit Tiers</em> or <em>Edit Types</em> to add, remove, or reorder labels</li>
+		  <li>These values appear in filter pickers and item detail views</li>
+		</ul>
+	  </li>
+	</ul>
+	<div class="caption headline">App Settings Panel</div>
+	<a href="images/settings_page.png" target="_blank">
+	  <img src="images/settings_page.png"
+		   alt="WeedTracker app settings panel"
+		   class="doc-image">
+	</a>
+	
+	<p><em>All settings take effect immediately and are saved automatically.</em></p>
+	<hr>
+<!-- END App Settings -->
 
 	<h3 id="faq">FAQ and Troubleshooting</h3>
-	<p>[Placeholder content]</p>
+	<p>[Coming Soon]</p>
 	<hr>
     </main>
 <!--
